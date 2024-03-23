@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURPRISE!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do You Want To Be Mine?</h1>
+        </div>
+        <div>
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnl2d3kwdnUzd2hkdzU5Mzlxank0azN5ZTB5ZzEzbGlyYzgxdGdpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/0CYWFwPtpaOKad5cgj/giphy.gif" alt="">
+        </div><br>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "Yes.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+        </div>
+    </div>
+</body>
+</html>

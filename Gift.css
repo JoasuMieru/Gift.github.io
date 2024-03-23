@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #FFE6E6;
+}
+
+#yesButt{
+    position: absolute;
+    transition: 0.5s;
+    background-color: #E1AFD1;
+    color: white;
+    padding: 10px 20px; /* Adjust padding to your preference */
+    text-align: center;
+    display: inline-block;
+    font-size: 18px; /* Adjust font size to your preference */
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: opacity 0.5;
+}
+
+#yesButt img{
+    width: 400px; /* Adjust the width as per your requirement */
+    height: 400px; /* Maintain aspect ratio */
+    padding: 2px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 300px;
+    margin-left: 20px;
+    padding: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.btn {
+    background-color: #E1AFD1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 130px;
+    text-decoration: underline;
+    
+}
